@@ -5,7 +5,6 @@
 'use strict';
 
 import express from 'express';
-import favicon from 'serve-favicon';
 import morgan from 'morgan';
 import compression from 'compression';
 import bodyParser from 'body-parser';
@@ -14,7 +13,7 @@ import cookieParser from 'cookie-parser';
 import errorHandler from 'errorhandler';
 import path from 'path';
 import lusca from 'lusca';
-import config from './environment';
+import config from './config';
 import passport from 'passport';
 import session from 'express-session';
 import connectMongo from 'connect-mongo';

@@ -3,7 +3,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
-import config from './config/environment';
+import config from './config/config';
 import http from 'http';
 
 // Connect to MongoDB
