@@ -1,20 +1,25 @@
 {
+    "rules": {
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ]
+    },
     "env": {
-        "browser": true,
-        "amd": true,
         "es6": true,
-        "mocha": true
+        "node": true
     },
     "parser": "babel-eslint",
-    "rules": {
-        "strict": 0,
-        "comma-dangle": [
-            2,
-            "always-multiline"
-        ],
-        "no-underscore-dangle": 0
+    "ecmaFeatures": {
+        "modules": true
     },
-    "globals": {
-        "expect": true
-    }
+    "extends": "eslint:recommended"
 }

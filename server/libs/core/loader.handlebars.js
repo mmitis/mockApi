@@ -30,9 +30,9 @@ class HandlebarsLoader {
 
                 throw err;
             }
-    });
-    return deferred.promise;
-}
+        });
+        return deferred.promise;
+    }
 
 
 
