@@ -25,7 +25,7 @@ gulp.task('test', function () {
 });
 
 gulp.task('watch', function(){
-   gulp.watch('server/**/*.js', ['babel'])
+   gulp.watch('server/**/*.js', ['babel']);
 
 });
 

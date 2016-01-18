@@ -2,7 +2,7 @@
  * Created by mmitis on 19.12.15.
  */
 
-import handlebars from "handlebars";
+import handlebars from 'handlebars';
 import q from 'q';
 import LRU from 'lru-cache';
 import md5 from 'md5';
@@ -13,11 +13,8 @@ import config from './../../config/config';
  */
 class HandlebarsLoader {
 
-
-
     constructor(){
         this.cache = LRU(500);
-
     }
     /**
      * Function to generate template

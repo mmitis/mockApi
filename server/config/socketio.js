@@ -45,5 +45,5 @@ var socketed = function(socketio) {
             require('../api/thing/thing.socket').register(socket);
         }
     });
-}
+};
 export default socketed;

@@ -51,4 +51,4 @@ export default {
         interval : 8000,
         mailsPerInterval: 10
     }
-}
+};
