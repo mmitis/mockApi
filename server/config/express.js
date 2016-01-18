@@ -12,7 +12,6 @@ import methodOverride from 'method-override';
 import cookieParser from 'cookie-parser';
 import errorHandler from 'errorhandler';
 import path from 'path';
-import lusca from 'lusca';
 import config from './config';
 import passport from 'passport';
 import session from 'express-session';
@@ -38,7 +37,7 @@ export default function(app) {
         resave: false,
         store: new mongoStore({
             mongooseConnection: mongoose.connection,
-            db: 'empty-api'
+            db: config.mongo.dbname
         })
     }));
 

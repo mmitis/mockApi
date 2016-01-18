@@ -11,6 +11,7 @@ export default {
     env: process.env.NODE_ENV,
     ip: process.env.IP || '0.0.0.0',
     mongo: {
+        dbname: 'empty-api',
         uri: process.env.MONGO_URL || 'mongodb://localhost/mock',
         options: {
             db: {

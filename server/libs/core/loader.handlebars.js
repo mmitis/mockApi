@@ -2,22 +2,21 @@
  * Created by mmitis on 19.12.15.
  */
 
-import Handlebars from "handlebars";
-import _ from 'lodash';
+import handlebars from "handlebars";
 import q from 'q';
 import LRU from 'lru-cache';
 import md5 from 'md5';
-
+import config from './../../config/config';
 
 /**
  * Loader for the templating engine
  */
 class HandlebarsLoader {
 
-    var cache = LRU(500);
+
 
     constructor(){
-
+        this.cache = LRU(500);
 
     }
     /**
@@ -25,7 +24,7 @@ class HandlebarsLoader {
      * @param templateName {string} templateName
      * @param language   {String} template language
      * @param properties {Object} fields to render template
-     * @param fromCache  should force to not load from cache
+     * @param forceLoad {boolean}  should force to not load from cache
      * @returns {string} rendered template
      */
     static loadTemplateAsync(templateName, language, properties, forceLoad) {
